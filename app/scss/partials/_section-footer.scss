@@ -1,0 +1,61 @@
+/* Site Footer Section
+--------------------------------------------- */
+
+.site-footer {
+	padding: $margin_4x 0;
+	background-color: brand_color("dark-blue");
+
+	.wrap-grid {
+		row-gap: $grid-gap;
+	}
+
+	// For fixed slick line
+	// .slick-line + & {
+	// 	padding-bottom: ($margin_4x + 43px);
+	// }
+}
+
+.footer__logo {
+	grid-column: span 12;
+	align-self: center;
+	justify-self: center;
+	display: flex;
+	flex-direction: column;
+
+	@include media(">=tablet") {
+		grid-column: span 7;
+		justify-self: flex-start;
+		flex-direction: row;
+	}
+
+	img {
+		width: 100%;
+		max-width: 180px;
+		height: auto;
+	}
+}
+
+.footer__logo-desc {
+	color: $grey_4;
+	text-align: center;
+	margin-top: $margin_2x;
+
+	@include media(">=tablet") {
+		margin-left: $margin_2x;
+		margin-top: 0;
+		text-align: left;
+		align-self: center;
+	}
+}
+
+.footer__button {
+	grid-column: span 12;
+	align-self: center;
+	justify-self: center;
+	text-transform: uppercase;
+
+	@include media(">=tablet") {
+		grid-column: span 5;
+		justify-self: flex-end;
+	}
+}

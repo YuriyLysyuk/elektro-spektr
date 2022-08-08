@@ -1,0 +1,46 @@
+/* Differences Section
+--------------------------------------------- */
+
+.differences {
+	padding: $margin_4x 0;
+	background-color: $white;
+
+
+	.h2 {
+		grid-column: span 12;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
+.differences__item {
+	grid-column: span 12;
+	text-align: center;
+	padding: $base-margin;
+	background-color: transparent;
+	border-radius: $base-radius;
+	@extend %transition;
+
+	@include media(">=small") {
+		grid-column: span 6;
+	}
+
+	@include media(">=tablet") {
+		grid-column: span 4;
+	}
+
+	&:hover {
+		background: $grey_3;
+	}
+
+	i {
+		font-size: 70px;
+		color: brand-color("green");
+	}
+	p {
+		margin: $base-margin 0 0 0;
+		font-family: "exo2", sans-serif;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+}

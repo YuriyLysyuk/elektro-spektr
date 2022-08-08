@@ -1,0 +1,62 @@
+/* Video Section
+--------------------------------------------- */
+
+.video {
+	padding: 0 0 $margin_4x 0;
+	background-color: $grey_3;
+
+	@include media(">=medium") {
+		padding: 0;
+	}
+}
+
+.video__youtube {
+	grid-column: span 12;
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+	margin: 0 (-$grid-gap / 2);
+
+	@include media(">=medium") {
+		grid-column: span 7;
+		margin: 0;
+	}
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.video__text {
+	grid-column: span 12;
+	padding: 0;
+
+	@include media(">=medium") {
+		grid-column: span 5;
+		padding: $base-margin 0;
+	}
+
+	p {
+		font-size: 15px;
+
+		strong {
+			font-size: 16px;
+		}
+	}
+	a {
+		display: inline-block;
+		text-transform: uppercase;
+	}
+}
+
+.video__button {
+	text-align: center;
+
+	@include media(">=medium") {
+		text-align: left;
+	}
+}

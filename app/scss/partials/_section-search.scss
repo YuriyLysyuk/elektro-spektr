@@ -1,0 +1,20 @@
+/* Search Section
+--------------------------------------------- */
+
+.search-content {
+	padding: $margin_4x 0;
+	background-color: $white;
+
+	& .h1 {
+		grid-column: span 12;
+		text-align: center;
+	}
+
+	& .subcategory-list {
+		grid-column: span 12;
+	}
+
+	& .no-found {
+		grid-column: span 12;
+	}
+}

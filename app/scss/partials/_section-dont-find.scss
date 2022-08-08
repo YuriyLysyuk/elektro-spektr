@@ -1,0 +1,54 @@
+/* Don't find Section
+--------------------------------------------- */
+
+.dont-find {
+	padding: $margin_4x 0;
+	background-color: brand-color("dark-blue");
+
+	.h2 {
+		grid-column: span 12;
+		text-align: center;
+		text-transform: uppercase;
+		color: $white;
+		margin: 0;
+	}
+
+	.dont-find__desc {
+		grid-column: span 12;
+		color: $grey_3;
+		text-align: center;
+		font-weight: 400;
+	}
+
+	.dont-find__politics {
+		grid-column: span 12;
+		color: $grey_5;
+		text-align: center;
+		font-size: 15px;
+
+		a {
+			color: $grey_5;
+		}
+	}
+}
+
+.dont-find__form {
+	grid-column: span 12;
+	padding-top: $base-margin;
+}
+.dont-find__form-input,
+.dont-find__form-submit {
+	grid-column: span 12;
+
+	@include media(">=small") {
+		grid-column: span 6;
+	}
+
+	@include media(">=medium") {
+		grid-column: span 3;
+	}
+}
+
+.dont-find__form-submit {
+	text-transform: uppercase;
+}

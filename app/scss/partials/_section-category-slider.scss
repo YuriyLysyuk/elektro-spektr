@@ -1,0 +1,71 @@
+/* Category Slider
+--------------------------------------------- */
+.category-slider {
+	padding: 0 0 $base-margin;
+	background-color: $grey_3;
+
+	@include media("<small") {
+		display: none;
+		
+		.wrap {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+#category-slider {
+	@include media(">=small") {
+		width: calc(100% - 124px);
+		margin: 0 auto;
+	}
+
+	.catalog__item {
+		min-height: 150px;
+		margin-left: 0;
+		margin-right: 0;
+
+		& .h4 {
+			text-shadow: $text-shadow;
+		}
+	}
+
+	&.owl-theme {
+		.owl-nav {
+			margin-top: 0;
+
+			.owl-next,
+			.owl-prev {
+				width: 50px;
+				height: 100%;
+				margin: 0;
+				position: absolute;
+				top: 0;
+				color: $base-color;
+				@extend %transition;
+
+				i {
+					font-size: 50px;
+				}
+
+				&:focus {
+					outline: none;
+				}
+				&:hover {
+					color: brand-color("yellow");
+				}
+			}
+			.owl-prev {
+				left: -66px;
+				&:hover {
+					background: none;
+				}
+			}
+			.owl-next {
+				right: -66px;
+				&:hover {
+					background: none;
+				}
+			}
+		}
+	}
+}

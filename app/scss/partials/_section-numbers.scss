@@ -1,0 +1,41 @@
+/* Numbers Section
+--------------------------------------------- */
+
+.numbers {
+	padding: $margin_2x 0;
+	background-color: brand-color("dark-blue");
+	display: none;
+
+	@include media(">=tablet") {
+		display: block;
+	}
+}
+
+.numbers__item {
+	grid-column: span 4;
+	display: flex;
+	flex-direction: column;
+	justify-self: center;
+
+	.h3 {
+		color: $accent;
+		@include font-sizes(34px);
+		font-weight: 700;
+		line-height: 1;
+		margin: 0;
+
+		& span {
+			color: $grey_3;
+			@include font-sizes(20px);
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+	}
+
+	p {
+		color: $grey_5;
+		line-height: 21px;
+		@include font-sizes(15px);
+		margin: $base-margin 0 0 0;
+	}
+}
