@@ -1,0 +1,64 @@
+/* Button
+--------------------------------------------- */
+
+$default: nth(nth($brand_colors, 6), 1); // first color in $brand_colors array
+
+.wp-block-button__link {
+	border: 2px solid brand-color($default);
+	border-radius: $base-radius;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 32px;
+	padding: 16px 32px;
+	font-family: $heading-font;
+	text-decoration: none;
+
+	.is-style-full &,
+	&.full {
+		display: block;
+		width: 100%;
+	}
+
+	&.button-mini {
+		padding: 8px 16px;
+		font-size: 16px;
+		line-height: 28px;
+	}
+
+	&:not(.has-text-color) {
+		color: $base-color;
+
+		&:hover {
+			color: $base-color;
+		}
+	}
+
+	&:not(.has-background) {
+		background-color: brand-color($default);
+
+		&:hover,
+		&:focus {
+			background-color: brand-color($default, "darken");
+		}
+	}
+
+	@each $name, $color in $brand_colors {
+		&.has-#{$name}-color {
+			color: brand-color($name);
+		}
+
+		&.has-#{$name}-color:hover,
+		&.has-#{$name}-color:focus {
+			color: $color;
+		}
+
+		&.has-#{$name}-background-color {
+			background-color: brand-color($name);
+			border-color: brand-color($name);
+		}
+		&.has-#{$name}-background-color:hover,
+		&.has-#{$name}-background-color:focus {
+			background-color: brand-color($name, "darken");
+		}
+	}
+}
