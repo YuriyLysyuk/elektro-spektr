@@ -1,0 +1,96 @@
+/* Modal
+--------------------------------------------- */
+
+.modal-common {
+	border-bottom: none !important;
+	.iziModal-content {
+		padding: $base-margin !important;
+	}
+	.message-row {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-column-gap: 20px;
+	}
+
+	.message {
+		display: flex;
+		align-items: center;
+		&--recieved {
+			grid-column: 1 / 5;
+			justify-self: flex-start;
+			.message-bubble {
+				&:after {
+					left: -4px;
+				}
+			}
+		}
+	}
+
+	.message-avatar {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		background-color: #dedede;
+		flex-shrink: 0;
+		margin-right: 12px;
+		position: relative;
+		overflow: hidden;
+		img {
+			max-width: 100%;
+			max-height: 100%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	.message-bubble {
+		background-color: #dedede;
+		padding: 8px 12px;
+		border-radius: 8px;
+		color: #303030;
+		position: relative;
+		font-size: 14px;
+		&:after {
+			display: block;
+			position: absolute;
+			content: "";
+			width: 16px;
+			height: 16px;
+			top: 50%;
+			background-color: #dedede;
+			transform: translateY(-50%) rotate(45deg);
+		}
+
+		p {
+			margin: 0;
+		}
+
+		* {
+			position: relative;
+			z-index: 1;
+		}
+	}
+}
+
+.modal-common__form {
+	& input {
+		margin-top: $base-margin;
+	}
+
+	.modal-common__button {
+		text-transform: uppercase;
+		margin: $base-margin auto 0;
+		display: flex;
+	}
+
+	.privacy-text {
+		font-size: 13px;
+		margin-top: 16px;
+		text-align: center;
+	}
+}
+
+.modal-thankyou {
+}
