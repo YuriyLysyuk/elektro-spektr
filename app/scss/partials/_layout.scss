@@ -1,0 +1,37 @@
+/* Box Sizing
+--------------------------------------------- */
+
+html,
+input[type="search"] {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* Wrap
+--------------------------------------------- */
+
+.wrap-grid {
+	max-width: map-get($breakpoints, "desktop");
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	margin: 0 auto;
+	padding-left: ($grid-gap / 2);
+	padding-right: ($grid-gap / 2);
+	row-gap: ($grid-gap / 2);
+	column-gap: ($grid-gap / 2);
+}
+
+.wrap {
+	max-width: map-get($breakpoints, "desktop");
+	display: block;
+	margin: 0 auto;
+	padding-left: ($grid-gap / 2);
+	padding-right: ($grid-gap / 2);
+	@include clearfix;
+}
+
