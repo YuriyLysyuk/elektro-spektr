@@ -1,0 +1,16 @@
+/* Top
+--------------------------------------------- */
+
+.top {
+	position: relative;
+	height: 80vh;
+	min-height: $top_slider_min_height;
+	overflow: auto;
+
+	&.template-wo-top-slider {
+		height: auto;
+		min-height: auto;
+	}
+
+	@include clearfix();
+}
