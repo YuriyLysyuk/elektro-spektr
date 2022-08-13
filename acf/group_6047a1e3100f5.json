@@ -1,0 +1,483 @@
+{
+    "key": "group_6047a1e3100f5",
+    "title": "Настройки товаров",
+    "fields": [
+        {
+            "key": "field_6047b407b817c",
+            "label": "Общее",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6047b41fb817d",
+            "label": "Краткое описание продукта",
+            "name": "product_desc",
+            "type": "textarea",
+            "instructions": "Появляется в карточке товара и в списке товаров",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
+        },
+        {
+            "key": "field_6048bfd2ecb31",
+            "label": "Привязанная страница",
+            "name": "product_rel_page_id",
+            "type": "relationship",
+            "instructions": "При пустом значении будет показываться попап. После выбора конкретной страницы, на нее можно будет перейти при нажатии на товар.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "min": "",
+            "max": 1,
+            "return_format": "id"
+        },
+        {
+            "key": "field_6047a825044e0",
+            "label": "Родительская категория товара",
+            "name": "product_parent_cat",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "product-category",
+            "field_type": "select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_6047b39ac6063",
+            "label": "Фильтр",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6047bf823f261",
+            "label": "Фильтр",
+            "name": "subcategory_filter",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6047a4c88944c",
+                    "label": "Фильтр кабелей",
+                    "name": "cable",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6047a825044e0",
+                                "operator": "==",
+                                "value": "5"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6047a9364570f",
+                            "label": "Токопроводящая жила",
+                            "name": "tokoprovodyashchaya-zhila",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "alyuminievaya": "алюминиевая",
+                                "mednaya": "медная"
+                            },
+                            "default_value": false,
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 1,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_6047aa4a5eae8",
+                            "label": "Материал изоляции",
+                            "name": "material-izolyacii",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "pvh-plastikat": "ПВХ пластикат",
+                                "polimernaya-kompoziciya": "полимерная композиция",
+                                "sshityy-polietilen": "сшитый полиэтилен"
+                            },
+                            "default_value": false,
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 1,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_6047ab902171c",
+                            "label": "Показатель пожарной безопасности",
+                            "name": "pokazatel-pozharnoy-bezopasnosti",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "otsutstvuet": "отсутствует",
+                                "nga": "нг(А)",
+                                "nga-frhf": "нг(А)-FRHF",
+                                "nga-frls": "нг(А)-FRLS",
+                                "nga-frlsltx": "нг(А)-FRLSLTx",
+                                "nga-hf": "нг(А)-HF",
+                                "nga-ls": "нг(А)-LS",
+                                "nga-lsltx": "нг(А)-LSLTx",
+                                "nga-hl": "нг(А)-ХЛ"
+                            },
+                            "default_value": false,
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 1,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_6047ad02a7ecd",
+                            "label": "Огнестойкое исполнение (FR)",
+                            "name": "ognestoykoe-ispolnenie-fr",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "net": "Нет",
+                                "da": "Да"
+                            },
+                            "default_value": false,
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 1,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_6047ad90a7ece",
+                            "label": "Хладостойкое исполнение (ХЛ)",
+                            "name": "hladostoykoe-ispolnenie-hl",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "net": "Нет",
+                                "da": "Да"
+                            },
+                            "default_value": false,
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 1,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_6047ae39f32ab",
+                            "label": "Экран",
+                            "name": "ekran",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "bez-ekrana": "без экрана",
+                                "s-ekranom": "с экраном"
+                            },
+                            "default_value": false,
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 1,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_6047aea5f7406",
+                            "label": "Тип брони",
+                            "name": "tip-broni",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "bez-broni": "без брони",
+                                "alyuminievye-lenty": "алюминиевые ленты",
+                                "stalnye-ocinkovannye-lenty": "стальные оцинкованные ленты",
+                                "stalnye-ocinkovannye-provoloki": "стальные оцинкованные проволоки"
+                            },
+                            "default_value": false,
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 1,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_6047b0f55d90b",
+                            "label": "Материал наружной оболочки",
+                            "name": "material-naruzhnoy-obolochki",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "otsutstvuet": "отсутствует",
+                                "pvh-plastikat": "ПВХ пластикат",
+                                "polimernaya-kompoziciya-ne-soderzhashchaya-galogenov": "полимерная композиция, не содержащая галогенов",
+                                "polietilen": "полиэтилен"
+                            },
+                            "default_value": false,
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 1,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_6047b1545d90c",
+                            "label": "Класс пожарной опасности",
+                            "name": "klass-pozharnoy-opasnosti",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "otsutstvuet": "отсутствует",
+                                "o18254": "О1.8.2.5.4",
+                                "o28254": "О2.8.2.5.4",
+                                "p1b1222": "П1б.1.2.2.2",
+                                "p1b7121": "П1б.7.1.2.1",
+                                "p1b7212": "П1б.7.2.1.2",
+                                "p1b7222": "П1б.7.2.2.2",
+                                "p1b8121": "П1б.8.1.2.1",
+                                "p1b8212": "П1б.8.2.1.2",
+                                "p1b8222": "П1б.8.2.2.2",
+                                "p1b8254": "П1б.8.2.5.4",
+                                "p27212": "П2.7.2.1.2"
+                            },
+                            "default_value": false,
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 1,
+                            "return_format": "value",
+                            "placeholder": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_604e04c54499a",
+            "label": "Макроразмеры",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6047a825044e0",
+                        "operator": "==",
+                        "value": "5"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_604e04cd4499b",
+            "label": "Макроразмеры кабеля",
+            "name": "cable_sizes",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6047a825044e0",
+                        "operator": "==",
+                        "value": "5"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_604e0523449a6",
+                    "label": "Размер кабеля",
+                    "name": "size",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1615725951
+}

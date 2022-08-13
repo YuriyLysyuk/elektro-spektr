@@ -1,0 +1,92 @@
+{
+    "key": "group_603e8ed6624e3",
+    "title": "Настройки категории",
+    "fields": [
+        {
+            "key": "field_603e8f1e2f873",
+            "label": "Фото рубрики",
+            "name": "product_category_img",
+            "type": "image",
+            "instructions": "Размер: 1200х675px, соотношение сторон 16:9\r\nДля кабелей: 900х506px",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_603f3e8e54918",
+            "label": "Показывать в слайдере на главной странице?",
+            "name": "product_category_show_in_main_slider",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_603f3fba027bf",
+            "label": "Привязанная страница",
+            "name": "product_category_rel_page_id",
+            "type": "relationship",
+            "instructions": "При пустом значении будет показываться попап. После выбора конкретной страницы, на нее можно будет перейти при нажатии на категорию.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "min": "",
+            "max": 1,
+            "return_format": "id"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "product-category"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1615732850
+}

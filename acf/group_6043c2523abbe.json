@@ -1,0 +1,83 @@
+{
+    "key": "group_6043c2523abbe",
+    "title": "Блок с SEO-текстом",
+    "fields": [
+        {
+            "key": "field_6043c28a99570",
+            "label": "Заголовок",
+            "name": "seo-title",
+            "type": "text",
+            "instructions": "Выводится в теге h1. Если не задан, блок с SEO-текстом не выводится",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6043c2c999571",
+            "label": "Контент",
+            "name": "seo-content",
+            "type": "wysiwyg",
+            "instructions": "Если не задан, блок с SEO-текстом не выводится",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/category-page.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/product-page.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/front-page.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/subcategory-page.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1615054238
+}
