@@ -26,3 +26,5 @@ function ly_theme_setup()
 	// Кастомный размер для изображений категорий в списке категорий
 	add_image_size('category-thumb', 480, 256);
 }
+
+}
