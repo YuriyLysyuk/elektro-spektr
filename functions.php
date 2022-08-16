@@ -133,4 +133,15 @@ function ly_global_enqueues()
 }
 add_action('wp_enqueue_scripts', 'ly_global_enqueues');
 
+/**
+ * Add favicon
+ *
+ */
+function rko_favicon()
+{
+	// generics
+	echo '<link rel="icon" href="' .
+		get_stylesheet_directory_uri() .
+		'/favicon.png" sizes="64x64">';
 }
+add_action('wp_head', 'rko_favicon');
