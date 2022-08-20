@@ -28,6 +28,7 @@ function ly_theme_setup()
 
 	// Includes
 	include_once get_stylesheet_directory() . '/inc/wordpress-cleanup.php';
+	include_once get_stylesheet_directory() . '/inc/genesis-changes.php';
 }
 
 /**
