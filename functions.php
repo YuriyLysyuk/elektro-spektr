@@ -30,6 +30,7 @@ function ly_theme_setup()
 	include_once get_stylesheet_directory() . '/inc/wordpress-cleanup.php';
 	include_once get_stylesheet_directory() . '/inc/genesis-changes.php';
 	include_once get_stylesheet_directory() . '/inc/markup.php';
+	include_once get_stylesheet_directory() . '/inc/disable-editor.php';
 }
 
 /**
