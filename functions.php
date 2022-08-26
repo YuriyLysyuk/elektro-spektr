@@ -33,6 +33,8 @@ function ly_theme_setup()
 	include_once get_stylesheet_directory() . '/inc/disable-editor.php';
 	include_once get_stylesheet_directory() . '/inc/header.php';
 	include_once get_stylesheet_directory() . '/inc/footer.php';
+	include_once get_stylesheet_directory() . '/inc/blocks.php';
+	include_once get_stylesheet_directory() . '/inc/acf.php';
 }
 
 /**
