@@ -35,6 +35,7 @@ function ly_theme_setup()
 	include_once get_stylesheet_directory() . '/inc/footer.php';
 	include_once get_stylesheet_directory() . '/inc/blocks.php';
 	include_once get_stylesheet_directory() . '/inc/acf.php';
+	include_once get_stylesheet_directory() . '/inc/subcategory-filter.php';
 }
 
 /**
