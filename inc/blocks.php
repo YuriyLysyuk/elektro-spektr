@@ -8,6 +8,12 @@
  * @since        1.0.0
  **/
 
+// Блок с верхним меню
+function ly_top_line_block()
+{
+	get_template_part('partials/block', 'top-line');
+}
+
 
 // Блок с хлебными крошками
 function ly_breadcrumbs_block()
