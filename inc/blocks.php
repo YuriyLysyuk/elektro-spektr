@@ -20,6 +20,12 @@ function ly_top_slider_block()
 	get_template_part('partials/block', 'top-slider');
 }
 
+// Блок с цифрами
+function ly_numbers_block()
+{
+	get_template_part('partials/block', 'numbers');
+}
+
 // Блок с хлебными крошками
 function ly_breadcrumbs_block()
 {
