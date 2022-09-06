@@ -32,3 +32,9 @@ function ly_breadcrumbs_block()
 	get_template_part('partials/block', 'breadcrumbs');
 }
 
+// Блок со слайдером категорий
+function ly_category_slider_block()
+{
+	get_template_part('partials/block', 'category-slider');
+}
+
