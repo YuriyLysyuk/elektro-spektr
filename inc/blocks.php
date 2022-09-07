@@ -38,3 +38,9 @@ function ly_category_slider_block()
 	get_template_part('partials/block', 'category-slider');
 }
 
+// Блок с модальными окнами
+function ly_modal_block()
+{
+	get_template_part('partials/block', 'modal');
+}
+
