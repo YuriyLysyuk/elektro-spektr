@@ -44,3 +44,9 @@ function ly_modal_block()
 	get_template_part('partials/block', 'modal');
 }
 
+// Блок каталога со списком категорий
+function ly_catalog_block()
+{
+	get_template_part('partials/block', 'catalog');
+}
+
