@@ -50,3 +50,9 @@ function ly_catalog_block()
 	get_template_part('partials/block', 'catalog');
 }
 
+// Блок с видео
+function ly_video_block()
+{
+	get_template_part('partials/block', 'video');
+}
+
