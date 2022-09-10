@@ -56,3 +56,9 @@ function ly_video_block()
 	get_template_part('partials/block', 'video');
 }
 
+// Блок с отличиями
+function ly_differences_block()
+{
+	get_template_part('partials/block', 'differences');
+}
+
