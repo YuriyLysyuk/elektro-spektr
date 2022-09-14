@@ -62,3 +62,9 @@ function ly_differences_block()
 	get_template_part('partials/block', 'differences');
 }
 
+// Блок с формой «Не нашли нужного товара?»
+function ly_dont_find_block()
+{
+	get_template_part('partials/block', 'dont-find');
+}
+
