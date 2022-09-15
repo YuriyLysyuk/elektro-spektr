@@ -68,3 +68,9 @@ function ly_dont_find_block()
 	get_template_part('partials/block', 'dont-find');
 }
 
+// Блок с поставщиками
+function ly_suppliers_block()
+{
+	get_template_part('partials/block', 'suppliers');
+}
+
