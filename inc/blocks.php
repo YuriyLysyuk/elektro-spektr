@@ -74,3 +74,9 @@ function ly_suppliers_block()
 	get_template_part('partials/block', 'suppliers');
 }
 
+// Блок с SEO-текстом
+function ly_text_block()
+{
+	get_template_part('partials/block', 'text');
+}
+
