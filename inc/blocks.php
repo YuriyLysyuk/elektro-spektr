@@ -80,3 +80,9 @@ function ly_text_block()
 	get_template_part('partials/block', 'text');
 }
 
+// Блок с футером
+function ly_footer_block()
+{
+	get_template_part('partials/block', 'footer');
+}
+
