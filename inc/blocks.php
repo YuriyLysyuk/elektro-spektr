@@ -86,3 +86,9 @@ function ly_footer_block()
 	get_template_part('partials/block', 'footer');
 }
 
+// Плавающий блок с контактами
+function ly_slick_line_block()
+{
+	get_template_part('partials/block', 'slick-line');
+}
+
