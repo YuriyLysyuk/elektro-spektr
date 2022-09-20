@@ -92,3 +92,9 @@ function ly_slick_line_block()
 	get_template_part('partials/block', 'slick-line');
 }
 
+// Блок «Как мы работаем»
+function ly_how_we_work_block()
+{
+	get_template_part('partials/block', 'how-we-work');
+}
+
