@@ -98,3 +98,9 @@ function ly_how_we_work_block()
 	get_template_part('partials/block', 'how-we-work');
 }
 
+// Блок с клиентами
+function ly_clients_block()
+{
+	get_template_part('partials/block', 'clients');
+}
+
