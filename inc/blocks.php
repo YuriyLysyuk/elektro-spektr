@@ -104,3 +104,16 @@ function ly_clients_block()
 	get_template_part('partials/block', 'clients');
 }
 
+// Обертка для контента подкатегории (открывающая)
+function ly_subcategory_content_wrap_open()
+{
+	echo '<section id="content" class="subcategory-content">';
+	echo '<div class="wrap-grid">';
+}
+
+// Обертка для контента подкатегории (закрывающая)
+function ly_subcategory_content_wrap_close()
+{
+	echo '</div>';
+	echo '</section>';
+}
