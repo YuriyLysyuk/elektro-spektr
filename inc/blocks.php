@@ -117,3 +117,10 @@ function ly_subcategory_content_wrap_close()
 	echo '</div>';
 	echo '</section>';
 }
+
+// Блок с фильтром товаров в подкатегории
+function ly_subcategory_filter_block()
+{
+	get_template_part('partials/block', 'subcategory-filter');
+}
+
