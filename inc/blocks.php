@@ -124,3 +124,9 @@ function ly_subcategory_filter_block()
 	get_template_part('partials/block', 'subcategory-filter');
 }
 
+// Блок со списком в подкатегории
+function ly_subcategory_list_block()
+{
+	get_template_part('partials/block', 'subcategory-list');
+}
+
