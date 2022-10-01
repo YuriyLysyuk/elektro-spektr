@@ -130,3 +130,9 @@ function ly_subcategory_list_block()
 	get_template_part('partials/block', 'subcategory-list');
 }
 
+// Блок с информацией о товаре
+function ly_product_content_block()
+{
+	get_template_part('partials/block', 'product-content');
+}
+
