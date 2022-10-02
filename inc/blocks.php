@@ -136,3 +136,8 @@ function ly_product_content_block()
 	get_template_part('partials/block', 'product-content');
 }
 
+// Блок с поискои
+function ly_search_block()
+{
+	get_template_part('partials/block', 'search');
+}
